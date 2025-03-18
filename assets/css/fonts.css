@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* Fonts */
+
+@font-face {
+    font-family: Mogra;
+    src: url('/assets/fonts/Mogra-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Zilla Slab";
+    src: url('/assets/fonts/ZillaSlab-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Zilla Slab Medium";
+    src: url('/assets/fonts/ZillaSlab-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Zilla Slab Medium Italic";
+    src: url('/assets/fonts/ZillaSlab-MediumItalic.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('/assets/fonts/Inter-VariableFont.ttf') format('truetype');
+    font-weight: 100 900; 
+    font-style: normal;
+}
+
+/* Fonts */
