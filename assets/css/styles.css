@@ -65,7 +65,7 @@ nav {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    padding: 2px 4px;
+    padding: 8px 8px;
 }
 
 .navbar .nav-links a:hover {
@@ -73,9 +73,55 @@ nav {
     background-color: gainsboro;
     text-decoration: none;
     font-size: 18px;
-    padding: 2px 4px;
+    padding: 8px 8px;
     border-radius: 5px;
 }
 
 /* Navigation Bar  */
 
+.test {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    background-color: #ffffff;
+}
+
+/* Navbar links */
+.test a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px; 
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Different colors for each link */
+
+.destinations {
+    background-color: #33B5E5; /* Blue */
+}
+
+.tours {
+    background-color: #4CAF50; /* Green */
+}
+
+.flights {
+    background-color: #FF5733; /* Orange */
+}
+
+.blog {
+    background-color: #FFC107; /* Yellow */
+}
+
+.about {
+    background-color: #554bde; /* Yellow */
+}
+
+.contact {
+    background-color: #9C27B0; /* Purple */
+}
+
+/* Hover effect */
+.test a:hover {
+    opacity: 0.8;
+}
