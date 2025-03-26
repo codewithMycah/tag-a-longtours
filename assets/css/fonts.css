@@ -3,12 +3,6 @@
 /* Fonts */
 
 @font-face {
-    font-family: Mogra;
-    src: url('/assets/fonts/Mogra-Regular.ttf') format('truetype');
-    font-style: normal;
-}
-
-@font-face {
     font-family: "Zilla Slab";
     src: url('/assets/fonts/ZillaSlab-Regular.ttf') format('truetype');
     font-style: normal;
