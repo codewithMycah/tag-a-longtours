@@ -1,12 +1,25 @@
 @charset "utf-8";
 
-/* Fonts */
+/* ===============================
+   Fonts
+   ===============================
+*/
 @import url('/assets/css/fonts.css');
+
+/* ===============================
+   Colors
+   ===============================
+*/
+@import url('/assets/css/colors.css');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -16,14 +29,16 @@ body {
 }
 
 main {
-    font-family: "Inter", sans-serif;
-    height: 100vh;
+    height: calc(100vh - 40px);
+    width: calc(100vw - 40px);
     background: url('/assets/images/rice_terraces.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
+    margin: 20px;
+    border-radius: 20px;
 }
 
 /* =============================================
@@ -33,7 +48,6 @@ main {
 
 nav {
     font-family: "Zilla Slab Medium Italic", serif;
-    padding: 20px;
 }
 
 .navbar {
@@ -44,8 +58,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 30px;
-    background: rgba(0, 0, 0, 0); 
+    padding: 50px 60px;
     z-index: 1;
 }
 
@@ -86,6 +99,7 @@ nav {
     color: #fff;
     text-decoration: underline;
     text-underline-offset: 6px;
+    text-decoration-color: var(--accent-color);
     transform: scale(1.1);
     padding: 8px 8px;
     border-radius: 8px;
@@ -99,68 +113,18 @@ nav {
     font-size: 1.5rem;
 }
 
-/* ===============================
-   Mobile Styles: 0px to 640px 
-   ===============================
-*/
-@media only screen and (max-width: 640px) {
-
-    .navbar .menu-btn {
-        display: block;
-    }
-
-    .navbar .logo > h3 {
-        display: none;
-    }
-
-    .navbar .nav-links {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        top: 0;
-        left: 0;
-        justify-content: center;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.9);
-        gap: 10px;
-        z-index: 99;
-    }
-
-    .navbar .nav-links.show {
-        display: flex;
-    }
-
-    .navbar .nav-links li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar .nav-links a {
-        display: block;
-        color: #fff;
-        text-decoration: none;
-        font-size: 1rem;
-        padding: 8px 8px;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .navbar .nav-links a:hover {
-        color: #fff;
-        background-color: rgba(65, 75, 154);
-        text-decoration: none;
-        transform: scale(1.1);
-        padding: 8px 8px;
-    }
-
+.hero h1 {
+    font-size: 8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
 }
- 
-/* =============================================
-    Tablet and Desktop Styles: greater than 640px
-=============================================
-*/
- @media only screen and (min-width: 641px) {
- 
- 
+
+.hero h2 {
+    font-family: "Zilla Slab Medium";
+    font-size: 1.5rem;
+}
+
+.hero img {
+    width: 30px;
 }

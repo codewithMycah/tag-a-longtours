@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* ===============================
+   Colors
+   ===============================
+*/
+
+:root {
+    --primary-color: #414B9A; /* Blue */
+    --secondary-color: #C8202F; /* Red */
+    --accent-color: #F1B113; /* Yellow */
+    --secondary-accent-color: #F3502D; /* Orange */
+    --background-color: #F7F5F4; /* Light gray */
+    --text-color: #121212; /* Dark gray */
+}
