@@ -3,28 +3,40 @@
 /* Fonts */
 
 @font-face {
-    font-family: "Zilla Slab";
-    src: url('/assets/fonts/ZillaSlab-Regular.ttf') format('truetype');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Zilla Slab Medium";
-    src: url('/assets/fonts/ZillaSlab-Medium.ttf') format('truetype');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Zilla Slab Medium Italic";
-    src: url('/assets/fonts/ZillaSlab-MediumItalic.ttf') format('truetype');
-    font-style: italic;
-}
-
-@font-face {
     font-family: Inter;
     src: url('/assets/fonts/Inter-VariableFont.ttf') format('truetype');
     font-weight: 100 900; 
     font-style: normal;
+}
+
+@font-face {
+    font-family: "Space Mono Regular";
+    src: url('/assets/fonts/SpaceMono-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Space Mono Italic";
+    src: url('/assets/fonts/SpaceMono-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Space Mono Bold";
+    src: url('/assets/fonts/SpaceMono-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LibreBaskerville Regular";
+    src: url('/assets/fonts/LibreBaskerville-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LibreBaskerville Italic";
+    src: url('/assets/fonts/LibreBaskerville-Italic.ttf') format('truetype');
+    font-style: italic;
 }
 
 /* Fonts */
