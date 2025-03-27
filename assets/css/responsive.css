@@ -14,21 +14,27 @@
         margin: 0;
         width: 100vw;
         height: 100vh;
+        border-radius: 0;
     }
+
+    /* =============================================
+        Navigation Bar
+    =============================================
+    */
     
     .navbar {
         padding: 30px 30px;
     }
 
-    .navbar .menu-btn {
+    .menu-btn {
         display: block;
     }
 
-    .navbar .logo > h3 {
+    .logo > h3 {
         display: none;
     }
 
-    .navbar .nav-links {
+    .nav-links {
         display: none;
         flex-direction: column;
         position: fixed;
@@ -43,27 +49,32 @@
         z-index: 99;
     }
 
-    .navbar .nav-links.show {
+    .nav-links.show {
         display: flex;
     }
 
-    .navbar .nav-links li {
+    .nav-links li {
         width: 100%;
         text-align: center;
     }
 
-    .navbar .nav-links a {
+    .nav-links a {
         display: block;
         font-size: 1rem;
     }
     
-    .navbar .nav-links a:hover {
+    .nav-links a:hover {
         background-color: var(--primary-color);
         text-decoration: none;
         transform: scale(1.1);
     }
 
-    .hero .hero-title {
+    /* =============================================
+        Hero Section 
+    =============================================
+    */
+
+    .hero-title {
         font-size: 1.75rem;
     }
     
@@ -71,7 +82,7 @@
         font-size: 0.75rem;
     }
     
-    .hero .more-btn {
+    .more-btn {
         margin-top: 10px;
         font-size: 0.75rem;
         padding: 5px 10px;
@@ -79,13 +90,120 @@
         border-radius: 10px;
     }
 
+    /* =============================================
+        Section
+    =============================================
+    */
+
+    section {
+        margin: 0;
+        width: 100vw;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    /* =============================================
+        Footer
+    =============================================
+    */
+
+    footer {
+        margin: 0;
+        width: 100vw;
+        border-radius: 0;
+        justify-content: center;
+    }
+
+    footer img {
+        height: 30px;
+    }
+    
+    .footer-line {
+        border-bottom: none;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        font-size: 0.75rem;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer button {
+        align-self: center;
+    }
+
+    .footer-icons {
+        justify-items: center;
+        align-items: center;
+    }
+
+    .footer-icons-list svg {
+        width: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 0.5rem;
+        padding: 10px;
+    }
+
 }
  
 /* =============================================
-    Tablet and Desktop Styles: greater than 640px
+    Tablet and Desktop Styles: greater than 767px
 =============================================
 */
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 768px) {
 
+    /* =============================================
+        Footer
+    =============================================
+    */
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
  
+}
+
+/* =============================================
+    Tablet and Desktop Styles: greater than 1199px
+=============================================
+*/
+
+@media only screen and (min-width: 1200px) {
+
+    /* =============================================
+        Footer
+    =============================================
+    */
+
+    footer {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        padding: 20px;
+    }
+
 }
