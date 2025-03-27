@@ -138,7 +138,7 @@ nav {
     font-family: "LibreBaskerville Italic";
     font-size: 1.5rem;
     font-weight: 500;
-    text-shadow: 1px 2px var(--text-color);
+    /* text-shadow: 1px 2px var(--text-color); */
 }
 
 .hero .more-btn {
@@ -156,3 +156,21 @@ nav {
     transition: all 0.3s ease-in-out;
 }
 
+footer {
+    font-family: "Space Mono Regular";
+    color: #fff;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 20px 20px 0px 20px;
+}
+
+footer img {
+    height: 50px;
+}
