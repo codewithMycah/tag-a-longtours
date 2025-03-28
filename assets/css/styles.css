@@ -222,7 +222,7 @@ section {
 
 .section-header span {
     font-family: "Space Mono Bold";
-    font-size: 1.75rem;
+    font-size: 2rem;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
 }
@@ -247,8 +247,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    grid-column-gap: 25px;
     justify-items: center;
     align-items: center;
     padding: 10px 0;
