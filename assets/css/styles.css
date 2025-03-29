@@ -74,6 +74,17 @@ a:hover {
     transform: scale(1.1);
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
 /* =============================================
     Navigation Bar
 =============================================
@@ -209,7 +220,7 @@ section {
     margin: 30px;
     border-radius: 20px;
     /* border: 1px solid; */
-    /* padding: 20px; */
+    padding: 20px 0;
 }
 
 .section-header {
@@ -218,6 +229,7 @@ section {
     align-items: center;
     width: 100%;
     padding-bottom: 10px;
+    text-align: left;
 }
 
 .section-header span {
@@ -244,13 +256,8 @@ section {
 }
 
 .destinations-gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: 500px;
     grid-column-gap: 25px;
-    justify-items: center;
-    align-items: center;
-    padding: 10px 0;
 }
 
 .card {
@@ -260,6 +267,10 @@ section {
     overflow: hidden;
     border-radius: 15px;
     transition: all 0.3s ease-in-out;
+}
+
+.card:nth-child(2) {
+    margin-top: 80px;
 }
 
 .card:hover {
@@ -311,6 +322,58 @@ section {
     justify-items: center;
     font-weight: 300;
     font-size: 0.75rem;
+}
+
+.services-card {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.services-card span {
+    display: inline-block;
+}
+
+.services-card span:nth-child(1) {
+    font-family: "Space Mono Regular";
+    text-transform: uppercase;
+}
+
+.services-card span:nth-child(2) {
+    display: none;
+    font-style: italic;
+    font-size: 0.75rem;
+}
+
+.services-card svg {
+    height: 40px;
+    fill: var(--primary-color);
+}
+
+.reviews-card {
+    position: relative;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.reviews-card svg {
+    height: 45px;
+    fill: var(--secondary-color);
+}
+
+.flex-row {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.name span {
+    display: block;
 }
 
 /* =============================================
