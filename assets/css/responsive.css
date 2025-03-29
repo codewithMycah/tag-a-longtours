@@ -84,11 +84,27 @@
     }
     
     .more-btn {
+        display: inline-flex;
         margin-top: 10px;
         font-size: 0.75rem;
         padding: 5px 10px;
         border: 3px solid transparent;
         border-radius: 10px;
+    }
+
+    .search-bar {
+        display: none;
+        padding: 10px 20px;
+    }
+
+    .search-bar form {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 10px;
+    }
+
+    .search-bar div {
+        width: 100%;
     }
 
     /* =============================================
