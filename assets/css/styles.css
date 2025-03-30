@@ -33,6 +33,17 @@ body {
     overflow-x: hidden;
 }
 
+header {
+    background-color: var(--primary-color);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-color);
+}
+
 main {
     height: calc(100vh - 60px);
     width: calc(100vw - 60px);
@@ -78,6 +89,10 @@ input:focus, select:focus {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     color: var(--primary-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .btn:hover {
@@ -116,6 +131,15 @@ nav {
     z-index: 1;
 }
 
+.navbar-normal {
+    min-width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+}
+
 .logo {
     display: flex;
     flex-direction: row;
@@ -129,7 +153,7 @@ nav {
 }
 
 .logo img {
-    height: 25px;
+    height: 20px;
 }
 
 .nav-links {
@@ -161,8 +185,9 @@ nav {
     display: none;
     cursor: pointer;
     z-index: 100; 
-    position: relative;
+    /* position: relative; */
     font-size: 1.5rem;
+    color: #fff;
 }
 
 /* =============================================
@@ -386,6 +411,16 @@ section {
     justify-items: center;
     font-weight: 300;
     font-size: 0.75rem;
+}
+
+.learn-more-btn {
+    border: 1px solid;
+    border-color: var(--primary-color);
+}
+
+.learn-more-btn svg {
+    height: 20px;
+    fill: var(--primary-color);
 }
 
 .services-card {
