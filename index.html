@@ -17,18 +17,21 @@
     <script src="/assets/js/script.js" defer></script>
 </head>
 <body>
-    <main>
-        <nav class="navbar">
+    <div id="top"></div> <!-- fragment identifer link -->
+
+    <main id="index-page">
+        <nav class="navbar" id="top">
             <a href="/index.html" class="logo">
                 <img src="../assets/images/logo_white.png" alt="logo">
                 <h3>Tag-a-long Tours</h3>
             </a>
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/index.html" class="active">Home</a></li>
                 <li><a href="/pages/destinations.html">Destinations</a></li>
                 <li><a href="/pages/tour-and-packages.html">Tours & Packages</a></li>
                 <li><a href="/pages/flights-accomodation.html">Flights & Accomodations</a></li>
                 <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/reviews.html">Reviews</a></li>
                 <li><a href="/pages/contact.html">Contact</a></li>
                 <li><a href="/pages/aboutus.html">About Us</a></li>
             </ul>
@@ -246,6 +249,10 @@
             </div>
         </div>
     </section>
+
+    <a href="#top" id="top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M444-192v-438L243-429l-51-51 288-288 288 288-51 51-201-201v438h-72Z"/></svg>
+    </a>
 
     <footer>
         <div class="footer-container">

@@ -33,6 +33,10 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: var(--primary-color);
     height: 100%;
@@ -45,16 +49,27 @@ header {
 }
 
 main {
-    height: calc(100vh - 60px);
-    width: calc(100vw - 60px);
-    background: url('/assets/images/rice_terraces.png') no-repeat center center/cover;
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
+}
+
+#index-page {
+    height: calc(100vh - 60px);
+    width: calc(100vw - 60px);
+    background: url('/assets/images/rice_terraces.png') no-repeat center center/cover;
+    justify-content: center;
     margin: 30px;
     border-radius: 20px;
+}
+
+#destination-page {
+    height: 300px;
+    width: 100%;
+    background: url('/assets/images/destinations/ph_waters.jpg') no-repeat center center/cover;
+    flex-direction: column;
+    /* justify-content: center; */
 }
 
 ul, ol {
@@ -110,6 +125,33 @@ input:focus, select:focus {
     padding: 10px 0;
 }
 
+#top {
+    position: absolute;
+    top: 0;
+}
+
+#top-btn {
+    border: 1px solid;
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 12px 14px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#top-btnn:hover {
+    background-color: #45a049;
+}
+
+#top-btn svg {
+    height: 30px;
+    fill: white;
+}
+
 /* =============================================
     Navigation Bar
 =============================================
@@ -132,7 +174,7 @@ nav {
 }
 
 .navbar-normal {
-    min-width: 70vw;
+    min-width: 80vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -179,6 +221,12 @@ nav {
     text-underline-offset: 6px;
     text-decoration-color: var(--accent-color);
     padding: 8px 8px;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--accent-color);
 }
 
 .menu-btn {
@@ -479,6 +527,23 @@ section {
 
 .name span:nth-child(1) {
     font-weight: 600;
+}
+
+/* =============================================
+    Destinations Page
+=============================================
+*/
+
+.video-container {
+    position: relative;
+    width: 100%;
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
 }
 
 /* =============================================
