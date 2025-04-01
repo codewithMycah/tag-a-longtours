@@ -116,8 +116,6 @@ input:focus, select:focus {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     justify-items: center;
@@ -170,7 +168,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 50px 60px;
-    z-index: 1;
 }
 
 .navbar-normal {
@@ -179,7 +176,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    z-index: 1;
 }
 
 .logo {
@@ -201,6 +197,7 @@ nav {
 .nav-links {
     display: flex;
     gap: 10px;
+    z-index: 99;
 }
 
 .nav-links li {
@@ -232,7 +229,7 @@ nav {
 .menu-btn {
     display: none;
     cursor: pointer;
-    z-index: 100; 
+    z-index: 1000; 
     /* position: relative; */
     font-size: 1.5rem;
     color: #fff;
@@ -392,8 +389,9 @@ section {
     color: #12121299;
 }
 
-.destinations-gallery-container {
-    grid-template-rows: 500px;
+.destinations-gallery-container, .services-container, .reviews-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 25px;
 }
 
@@ -406,11 +404,15 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
-.card:nth-child(2) {
+.card-middle {
     margin-top: 80px;
 }
 
-.card:hover {
+.destination-card {
+    height: 600px;
+}
+
+.destination-card:hover {
     transform: scale(1.1);
     transform: rotate(5deg);
 }
@@ -431,6 +433,7 @@ section {
     height: 100%;
     background: linear-gradient(to bottom, transparent, transparent, rgba(0, 0, 0, 0.8));
     pointer-events: none;
+    z-index: 1;
 }
 
 .card-description {
@@ -453,7 +456,7 @@ section {
     font-weight: 600;
 }
 
-.card-description span:nth-child(2) {
+.card-location {
     display: flex;
     align-items: center;
     justify-items: center;
@@ -533,6 +536,30 @@ section {
     Destinations Page
 =============================================
 */
+
+.hero em {
+    display: block;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero em:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--accent-color);
+}
+
+.luzviminda-container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    max-height: 600px;
+    grid-row-gap: 0;
+}
+
+.luzviminda-card {
+    border-radius: 0;
+}
 
 .video-container {
     position: relative;

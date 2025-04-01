@@ -98,7 +98,7 @@
         width: 100vw;
         height: 100%;
         border-radius: 0;
-        padding: 40px;
+        padding: 30px;
     }
 
     .container {
@@ -124,7 +124,11 @@
         grid-row-gap: 25px;
     }
 
-    .card:nth-child(2) {
+    .destination-card {
+        height: 100%;
+    }
+
+    .card-middle {
         margin-top: 0;
     }
 
@@ -234,11 +238,15 @@
         text-align: center;
         background-color: rgba(0, 0, 0, 0.9);
         gap: 10px;
-        z-index: 99;
+        z-index: 1000;
     }
 
     .nav-links.show {
         display: flex;
+    }
+
+    .card, .card::after {
+        z-index: 1;
     }
 }
  
@@ -266,6 +274,10 @@
 */
 
 @media only screen and (min-width: 1200px) {
+
+    .hero em {
+        font-size: 3rem;
+    }
 
     /* =============================================
         Footer
