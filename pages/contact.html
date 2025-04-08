@@ -26,12 +26,12 @@
             </a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/destinations.html" class="active">Destinations</a></li>
+                <li><a href="/pages/destinations.html">Destinations</a></li>
                 <li><a href="/pages/tour-and-packages.html">Tours & Packages</a></li>
                 <li><a href="/pages/flights-accomodation.html">Flights & Accomodations</a></li>
                 <li><a href="/pages/blog.html">Blog</a></li>
                 <li><a href="/pages/reviews.html">Reviews</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/contact.html" class="active">Contact</a></li>
                 <li><a href="/pages/aboutus.html">About Us</a></li>
             </ul>
             <div class="menu-btn" id="menu-btn">
@@ -43,14 +43,19 @@
         </div>
     </main>
 
-    <section>
-        <form action="">
-            <input type="text" id="name" name="name" placeholder="Your name...">
-            <input type="email" id="email" name="email" placeholder="Your email...">
-            
-            <textarea id="message" name="message" rows="5" cols="50" placeholder="Type your message here..."></textarea>
-            <button type="submit" class="btn form-btn">Submit</button>
-        </form>
+    <section class="container contact-container">
+        <div class="img-wrapper">
+            <img src="/assets/images/destinations/ph_waters.jpg" alt="">
+        </div>
+        <div>
+            <h1>Say Hello!</h1>
+            <form action="">
+                <input type="text" id="name" name="name" placeholder="Your name...">
+                <input type="email" id="email" name="email" placeholder="Your email...">
+                <textarea id="message" name="message" rows="5" cols="50" placeholder="Type your message here..."></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
     </section>
 
 </body>

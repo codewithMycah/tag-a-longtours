@@ -33,8 +33,6 @@
         padding: 30px 30px;
     }
 
-    
-
     .nav-links li {
         width: 100%;
         text-align: center;
@@ -147,6 +145,19 @@
     }
 
     .learn-more-btn > p {
+        display: none;
+    }
+
+    /* =============================================
+        Contact
+    =============================================
+    */
+
+    .contact-container div {
+        padding: 20px;
+    }
+
+    .contact-container div:nth-child(1) {
         display: none;
     }
 
