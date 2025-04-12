@@ -39,20 +39,45 @@
             </div>
         </nav>
         <div class="hero">
-            <h2>Let's <em>chat.</em> We will get back to you asap.</h2>
+            <h2>Let's get in <em>touch.</em> We will get back to you asap.</h2>
         </div>
     </main>
 
     <section class="container contact-container">
-        <div class="img-wrapper">
-            <img src="/assets/images/destinations/ph_waters.jpg" alt="">
-        </div>
-        <div>
+        <div class="form-wrapper">
             <h1>Say Hello!</h1>
-            <form action="">
-                <input type="text" id="name" name="name" placeholder="Your name...">
-                <input type="email" id="email" name="email" placeholder="Your email...">
-                <textarea id="message" name="message" rows="5" cols="50" placeholder="Type your message here..."></textarea>
+            <span>Or reach out to us manually to <a href="mailto:contact@tagalongtours.com">contact@tagalongtours.com</a></span>
+            <form id="contact-form">
+                
+                <div class="form_name">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <div class="name_div">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <input required type="text" id="fname" name="fname" placeholder="Your first name...">    
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <div class="name_div">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <input required type="text" id="lname" name="lname" placeholder="Your last name...">
+                        </div>
+                    </div>
+                </div>
+                <label for="email">Email</label>
+
+                <div class="form_email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <input required type="email" id="email" name="email" placeholder="Your email...">
+                </div>
+
+                <label for="message">Message</label>
+                <div class="form_message">
+                    <textarea required id="message" name="message" rows="5" cols="50" placeholder="Type your message here..."></textarea>
+                </div>
+                
                 <button type="submit" class="btn">Submit</button>
             </form>
         </div>

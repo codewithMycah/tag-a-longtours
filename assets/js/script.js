@@ -13,3 +13,16 @@ menuBtn.addEventListener('click', () => {
         menuIcon.innerHTML = '&#9776;'; // Hamburger icon when menu is closed
     }
 });
+
+const contactForm = document.getElementById('contact-form');
+
+contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const firstName = document.getElementById('fname').value;
+    const lastName = document.getElementById('lname').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    alert(`First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nMessage: ${message}`);
+})

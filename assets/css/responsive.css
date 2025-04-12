@@ -149,16 +149,53 @@
     }
 
     /* =============================================
+        Destinations
+    =============================================
+    */
+
+    .destinations-section {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .video-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .video-container iframe {
+        margin: 0 5px;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    /* =============================================
         Contact
     =============================================
     */
 
-    .contact-container div {
-        padding: 20px;
+    .contact-container {
+        max-width: 100%;
     }
 
-    .contact-container div:nth-child(1) {
-        display: none;
+    .form-wrapper span {
+        font-size: 0.75rem
+    }
+
+    .form_name {
+        flex-direction: column;
+    }
+    
+    /* =============================================
+        About Us
+    =============================================
+    */
+
+    .about-container {
+        padding-top: 80px;
+        justify-content: center;
+        align-content: center;
     }
 
     /* =============================================
@@ -267,11 +304,6 @@
 */
 @media only screen and (min-width: 768px) {
 
-    /* =============================================
-        Footer
-    =============================================
-    */
-
     footer {
         padding-left: 20px;
         padding-right: 20px;
@@ -286,18 +318,26 @@
 
 @media only screen and (min-width: 1200px) {
 
+    .wrapper {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .hero em {
         font-size: 3rem;
     }
 
-    /* =============================================
-        Footer
-    =============================================
-    */
+    .destinations-section {
+        flex: 1;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
 
     footer {
-        padding-left: 150px;
-        padding-right: 150px;
+        padding: 0 150px;
     }
 
     .footer-container {
@@ -306,10 +346,6 @@
         grid-template-rows: 1fr;
         grid-column-gap: 10px;
         padding: 20px;
-    }
-
-    .services-container {
-        grid-template-columns: repeat(6, 1fr);
     }
 
 }
