@@ -361,6 +361,7 @@ nav {
 
 section {
     height: 100%;
+    width: 70dvw;
     /* width: calc(100vw - 60px); */
     background-color: #fff;
     display: flex;
@@ -369,10 +370,10 @@ section {
     align-items: center;
     text-align: center;
     color: var(--primary-color);
-    margin: 30px;
+    margin: auto;
     border-radius: 20px;
     /* border: 1px solid; */
-    padding: 20px 0;
+    padding: 20px 40px;
 }
 
 .section-header {
@@ -592,7 +593,7 @@ section {
 
 .video-container iframe {
     border-radius: 20px;
-    min-width: 530px;
+    min-width: 20vw;
     min-height: 300px;
 }
 
