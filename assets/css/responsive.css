@@ -170,6 +170,14 @@
         min-height: 100%;
     }
 
+    .destination-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .vertical-table th {
+        width: 100px;
+    }
+
     /* =============================================
         Contact
     =============================================

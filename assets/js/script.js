@@ -14,6 +14,10 @@ menuBtn.addEventListener('click', () => {
     }
 });
 
+// Adjust background audio volume to 30%
+const audio = document.getElementById("bg-audio");
+audio.volume = 0.3; // Sets volume to 30%
+
 const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', function (e) {
@@ -26,3 +30,4 @@ contactForm.addEventListener('submit', function (e) {
 
     alert(`First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nMessage: ${message}`);
 })
+

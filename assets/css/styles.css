@@ -406,6 +406,7 @@ section {
     align-self: start;
     padding-bottom: 5px;
     color: #12121299;
+    text-align: left;
 }
 
 .destinations-gallery-container, .services-container, .reviews-container {
@@ -595,6 +596,65 @@ section {
     border-radius: 20px;
     min-width: 20vw;
     min-height: 300px;
+}
+
+.vertical-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.vertical-table th,
+.vertical-table td {
+    /* border: 1px solid #ccc; */
+    padding: 12px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.vertical-table th {
+    width: 150px;
+}
+
+.vertical-table li {
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.destination-block {
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.destination-title {
+    font-family: "LibreBaskerville Regular";
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.destination-image {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.destination-image img:hover {
+    transform: scale(1.05);
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
 }
 
 /* =============================================
