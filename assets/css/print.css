@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+#tours-packages-page, #destination-page, #tour {
+    display: none;
+}
+
+section {                              
+    width: 100%;
+}
+
+footer {
+    display: none;
+}
+
+.video-container {
+    display: none;
+}
+
+.destinations-gallery-container, .services-container, .reviews-container, .tours-packages-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); 
+}
+
+.tourpackage-section {
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+
+.tour-details div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.reviews-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); 
+}

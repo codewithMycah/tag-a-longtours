@@ -20,7 +20,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px dashed red;  */
+    /* border: 1px dashed red;      */
     /* code above is for dev */
     box-sizing: border-box;
 }
@@ -88,6 +88,27 @@ main {
     background: url('/assets/images/bg_about.jpg') no-repeat center center/cover;
     flex-direction: column;
     /* justify-content: center; */
+}
+
+#tours-packages-page {
+    height: 300px;
+    width: 100%;
+    background: url('/assets/images/destinations/kalanggaman-island.jpg') no-repeat center center/cover;
+    flex-direction: column;
+}
+
+#reviews-page {
+    height: 300px;
+    width: 100%;
+    background: url('/assets/images/destinations/camiguin-island.jpg') no-repeat center center/cover;
+    flex-direction: column;
+}
+
+#flight-accomodation-page {
+    height: 300px;
+    width: 100%;
+    background: url('/assets/images/destinations/siargao-island.jpg') no-repeat center center/cover;
+    flex-direction: column;
 }
 
 ul, ol {
@@ -266,7 +287,7 @@ nav {
     font-family: "LibreBaskerville Italic";
     font-size: 1.5rem;
     font-weight: 400;
-    /* text-shadow: 1px 2px var(--text-color); */
+    text-shadow: 2px 2px var(--text-color);
 }
 
 .hero-title {
@@ -429,7 +450,7 @@ section {
 }
 
 .destination-card {
-    height: 600px;
+    height: 500px;
 }
 
 .destination-card:hover {
@@ -482,6 +503,7 @@ section {
     justify-items: center;
     font-weight: 300;
     font-size: 0.75rem;
+    gap: 5px;
 }
 
 .learn-more-btn {
@@ -655,6 +677,81 @@ section {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+}
+
+/* =============================================
+    Tours and Packages
+=============================================
+*/
+
+.tourpackage-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 20px;
+}
+
+.tourpackage-card {
+    background-color: white;
+    min-width: 250px;
+    min-height: 250px;
+}
+
+.tourpackage-header {
+    font-family: "Space Mono Bold";
+    text-transform: uppercase;
+}
+
+.tour-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.tour-details div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-description dl {
+    padding-top: 15px;
+}
+
+.tour-details dd {
+    font-family: "Space Mono Regular";
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.tourpackage-section {
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.itinerary-list {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+
+.itinerary-list li {
+    padding: 10px 0;
+    text-align: left
+}
+
+.itinerary-list > li::marker {
+    font-family: "Space Mono Bold";
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.itinerary-list li > ul {
+    padding: 5px 0;
+    list-style: disc;
+    list-style-position: inside;
 }
 
 /* =============================================
